@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq3p7aljsv11c"]
+
+[ext_resource type="Texture2D" uid="uid://b20rbj3folury" path="res://assets/frotnite.jpg" id="1_iekdr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i10n8"]
+size = Vector2(791, 1000)
+
+[node name="Fortnite" type="Area2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_iekdr")
+
+[node name="HitBox" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_i10n8")

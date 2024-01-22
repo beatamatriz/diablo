@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckddx0dat1ugd"]
+
+[ext_resource type="Texture2D" uid="uid://dogk35ibtktme" path="res://assets/maze.PNG" id="1_1ek4u"]
+
+[node name="Maze" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_1ek4u")
+metadata/_edit_lock_ = true
+
+[node name="Frame1" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PackedVector2Array(-524, 524, -518, 518, 516, 518, 516, -515, 522, -521, 522, 524)
+
+[node name="Frame2" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PackedVector2Array(-518, 518, -524, 524, -524, -521, 522, -521, 516, -515, -518, -515)

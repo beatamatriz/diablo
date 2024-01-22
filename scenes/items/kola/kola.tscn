@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://w8wu2pvdipiw"]
+
+[ext_resource type="Texture2D" uid="uid://b1b3yt77yvvj2" path="res://assets/cola.png" id="1_m30p0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3285c"]
+size = Vector2(167, 436)
+
+[node name="Kola" type="Area2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_m30p0")
+
+[node name="HitBox" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_3285c")
+
+[node name="HitBox2" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_3285c")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://duppele6thac5"]
+
+[ext_resource type="Script" path="res://scenes/player/pancracio.gd" id="1_b1nwf"]
+[ext_resource type="Texture2D" uid="uid://uwkm4m0tdjua" path="res://assets/yipee.png" id="2_kl57c"]
+[ext_resource type="AudioStream" uid="uid://xugqk21o257r" path="res://assets/yippee-tbh.mp3" id="3_8qhy7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ll667"]
+size = Vector2(56, 41)
+
+[node name="Pancracio" type="CharacterBody2D"]
+script = ExtResource("1_b1nwf")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(11, -27)
+texture = ExtResource("2_kl57c")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_ll667")
+
+[node name="Yipee" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_8qhy7")

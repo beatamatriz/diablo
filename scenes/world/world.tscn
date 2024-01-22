@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://jhpvmpbj04dl"]
+
+[ext_resource type="PackedScene" uid="uid://duppele6thac5" path="res://scenes/player/pancracio.tscn" id="1_dnjun"]
+[ext_resource type="PackedScene" uid="uid://ckddx0dat1ugd" path="res://scenes/maze/maze.tscn" id="1_ywv47"]
+[ext_resource type="PackedScene" uid="uid://cq3p7aljsv11c" path="res://scenes/items/fortnite/fortnite.tscn" id="2_0slhp"]
+[ext_resource type="PackedScene" uid="uid://w8wu2pvdipiw" path="res://scenes/items/kola/kola.tscn" id="3_faud0"]
+
+[node name="World" type="Node2D"]
+
+[node name="Maze" parent="." instance=ExtResource("1_ywv47")]
+position = Vector2(16, -45)
+scale = Vector2(1.5, 1.5)
+
+[node name="Pancracio" parent="." instance=ExtResource("1_dnjun")]
+position = Vector2(275, 639)
+
+[node name="Fortnite" parent="." instance=ExtResource("2_0slhp")]
+position = Vector2(757, 701)
+scale = Vector2(0.05, 0.05)
+
+[node name="Kola" parent="." instance=ExtResource("3_faud0")]
+position = Vector2(-730, -486)
+scale = Vector2(0.1, 0.1)
